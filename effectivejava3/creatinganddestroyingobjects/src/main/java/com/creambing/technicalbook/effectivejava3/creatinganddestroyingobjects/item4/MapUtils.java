@@ -17,7 +17,7 @@ import java.util.Map;
  * 单例模式
  * 缺点：
  * 这个类不能被子类化，无法被继承
- *
+ * <p>
  * author: CreamBing
  * time: 2019-01-30 13:58
  * version: v1.0.0
@@ -26,10 +26,15 @@ public class MapUtils {
 
     //私有构造，表示这个类初始化没有意义
     private MapUtils() {
+        throw new AssertionError();
     }
 
     //在google guava类库中就有该工具方法，在方法类型推断还没有出来之前
-    public static <K,V> Map<K,V> newHashMap(){
+    public static <K, V> HashMap<K, V> newHashMap() {
         return new HashMap<>();
+    }
+
+    public static void main(String[] args) {
+        Map<String, String> map = MapUtils.newHashMap();
     }
 }
