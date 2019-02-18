@@ -1,3 +1,4 @@
 rootProject.name = 'leetcode'
 include 'backtracking'
+include 'divideandconquer'
 
