@@ -21,6 +21,9 @@ public class WordFormBean {
     //单词需要翻译成何种语言
     private Language toType;
 
+    public WordFormBean() {
+    }
+
     public WordFormBean(String value, Language fromType, Language toType) {
         this.value = value;
         this.fromType = fromType;

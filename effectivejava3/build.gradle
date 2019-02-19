@@ -20,6 +20,7 @@ subprojects {
 
     dependencies {
         // 子项目通用依赖
+        compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.1'
         // 测试依赖
         testCompile group: 'junit', name: 'junit', version: '4.12'
     }

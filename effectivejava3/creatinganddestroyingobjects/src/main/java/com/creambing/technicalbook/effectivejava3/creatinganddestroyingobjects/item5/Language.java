@@ -14,5 +14,5 @@ package com.creambing.technicalbook.effectivejava3.creatinganddestroyingobjects.
  */
 public enum Language {
     //预设中文和英文
-    CHINESE,ENGLISH;
+    CHINESE,ENGLISH
 }
