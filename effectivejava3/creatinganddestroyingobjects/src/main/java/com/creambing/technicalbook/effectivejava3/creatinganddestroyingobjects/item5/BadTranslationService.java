@@ -6,7 +6,6 @@ package com.creambing.technicalbook.effectivejava3.creatinganddestroyingobjects.
 
 import org.apache.commons.lang3.StringUtils;
 
-import java.util.Objects;
 import java.util.Optional;
 
 /**
