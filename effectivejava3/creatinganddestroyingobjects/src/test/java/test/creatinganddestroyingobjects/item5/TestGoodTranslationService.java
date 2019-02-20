@@ -53,6 +53,8 @@ public class TestGoodTranslationService {
         wordFormBean.setToType(Language.ENGLISH);
         String val = GoodTranslationService.translate(wordFormBean);
         assertThat(val, equalTo("中文to英文"));
+        String val1 = GoodTranslationService.translateUsingEnum(wordFormBean);
+        assertThat(val1, equalTo("中文to英文"));
     }
 
     @Test
@@ -63,6 +65,9 @@ public class TestGoodTranslationService {
         wordFormBean.setToType(Language.CHINESE);
         String val = GoodTranslationService.translate(wordFormBean);
         assertThat(val, equalTo("中文to中文"));
+        String val1 = GoodTranslationService.translateUsingEnum(wordFormBean);
+        assertThat(val1, equalTo("中文to中文"));
+
     }
 
     @Test
@@ -73,6 +78,8 @@ public class TestGoodTranslationService {
         wordFormBean.setToType(Language.ENGLISH);
         String val = GoodTranslationService.translate(wordFormBean);
         assertThat(val, equalTo("英文to英文"));
+        String val1 = GoodTranslationService.translateUsingEnum(wordFormBean);
+        assertThat(val1, equalTo("英文to英文"));
     }
 
     @Test
@@ -83,5 +90,7 @@ public class TestGoodTranslationService {
         wordFormBean.setToType(Language.CHINESE);
         String val = GoodTranslationService.translate(wordFormBean);
         assertThat(val, equalTo("英文to中文"));
+        String val1 = GoodTranslationService.translateUsingEnum(wordFormBean);
+        assertThat(val1, equalTo("英文to中文"));
     }
 }

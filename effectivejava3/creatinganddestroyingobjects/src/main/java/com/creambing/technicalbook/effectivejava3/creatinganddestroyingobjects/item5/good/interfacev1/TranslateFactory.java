@@ -6,6 +6,7 @@ package com.creambing.technicalbook.effectivejava3.creatinganddestroyingobjects.
 
 import com.creambing.technicalbook.effectivejava3.creatinganddestroyingobjects.item5.Language;
 import com.creambing.technicalbook.effectivejava3.creatinganddestroyingobjects.item5.WordFormBean;
+import com.creambing.technicalbook.effectivejava3.creatinganddestroyingobjects.item5.good.enumv1.TranslateService;
 import com.creambing.technicalbook.effectivejava3.creatinganddestroyingobjects.item5.good.singleton.C2CTranslateSingleImpl;
 import com.creambing.technicalbook.effectivejava3.creatinganddestroyingobjects.item5.good.singleton.C2ETranslateSingleImpl;
 import com.creambing.technicalbook.effectivejava3.creatinganddestroyingobjects.item5.good.singleton.E2CTranslateSingleImpl;
@@ -61,4 +62,5 @@ public interface TranslateFactory {
         Language toType = wordFormBeanOpt.map(WordFormBean::getToType).orElse(Language.CHINESE);
         return getTranslateService(fromType, toType);
     }
+
 }
